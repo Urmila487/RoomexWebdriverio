@@ -19,3 +19,7 @@ RoomexWebdriverio/test/specs/roomex.js
 ```
 RoomexWebdriverio/test/pageobjects/
 ```
+## For Run TestCases Open Terminal and Run below Command
+```
+npx wdio run wdio.conf.js
+```
