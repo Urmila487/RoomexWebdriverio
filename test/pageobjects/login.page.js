@@ -10,9 +10,9 @@ class LoginPage extends Page {
         return btnLogin;
     }
 
-    emailError() {return $('.ng-tns-c93-0[data-qa=div-error]')}
+    get emailError() {return $('.ng-tns-c93-0[data-qa=div-error]')}
 
-    passwordError() {return $('.ng-tns-c93-1[data-qa=div-error]')}
+    get passwordError() {return $('.ng-tns-c93-1[data-qa=div-error]')}
 
 
 

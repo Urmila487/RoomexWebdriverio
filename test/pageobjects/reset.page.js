@@ -18,8 +18,9 @@ class ResetPage extends Page {
     }
 
 
-    errorMessage (){ 
-        return $('.ng-tns-c83-6[data-qa=danger]');
+    get errorMessage (){ 
+        const errorMessage = browser.$('rx-alert[type="danger"]');
+        return errorMessage;
     }
 
 

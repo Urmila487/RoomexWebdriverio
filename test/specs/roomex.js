@@ -3,7 +3,7 @@ import ResetPage from '../pageobjects/reset.page'
 import resources from '../resources'
 
 describe('Roomex', () => {
-    it('Verify Login Page Email and Password Required Error message', async () => {
+    it('Verify Login Page Email and Password Required Error message', () => {
         LoginPage.open()  
         expect(browser).toHaveTitle(resources.homeTitle) //Verify title
         LoginPage.btnLogin.click() // Click Login Button
@@ -13,7 +13,7 @@ describe('Roomex', () => {
         expect(LoginPage.passwordError).toHaveTextContaining(resources.passwordRequired)
     });
 
-    it('Verify ResetPassword Page Email does not exist ', async () => {
+    it('Verify ResetPassword Page Email does not exist ', () => {
         ResetPage.openForgotPasswordPage()
         ResetPage.inputEmail.setValue('bob@example.com') //Set Email id in input box
         ResetPage.btnResetPassword.click()  // Click Reset Password button
